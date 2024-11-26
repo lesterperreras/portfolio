@@ -1,156 +1,69 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lester Perreras Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <h1>I'm Lester Perreras</h1>
+      <p>Portfolio</p>
+    </div>
+  </header>
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #000;
-  color: #fff;
-  line-height: 1.6;
-}
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#photos">Photos</a></li>
+    </ul>
+  </nav>
 
-/* Header / Hero Section */
-header .hero {
-  text-align: center;
-  padding: 6rem 2rem;
-  background: linear-gradient(135deg, #111, #333);
-}
+  <section id="home">
+    <div class="container">
+      <h2>Welcome</h2>
+      <p>Hi! I'm a videographer and photographer passionate about capturing moments that tell stories. Scroll down to explore my work!</p>
+    </div>
+  </section>
 
-header h1 {
-  font-size: 3rem;
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
+  <section id="videos">
+    <div class="container">
+      <h2>Videos</h2>
+      <div class="video-reel">
+        <video controls>
+          <source src="your-reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><a href="your-video-link" target="_blank">View Full Reel</a></p>
+      </div>
+    </div>
+  </section>
 
-header p {
-  font-size: 1.5rem;
-  color: #aaa;
-}
+  <section id="photos">
+    <div class="container">
+      <h2>Photos</h2>
+      <div class="photo-grid">
+        <!-- Add 3x6 photo grid -->
+        <div class="photo-item">
+          <img src="sample-photo1.jpg" alt="Sample Photo 1">
+          <p><a href="your-photo-link1" target="_blank">View Full Image</a></p>
+        </div>
+        <div class="photo-item">
+          <img src="sample-photo2.jpg" alt="Sample Photo 2">
+          <p><a href="your-photo-link2" target="_blank">View Full Image</a></p>
+        </div>
+        <!-- Add more items here -->
+      </div>
+    </div>
+  </section>
 
-/* Navigation */
-nav {
-  background-color: #222;
-  padding: 1rem 0;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: #444;
-}
-
-/* Sections */
-section {
-  padding: 3rem 2rem;
-}
-
-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #fff;
-}
-
-section p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #ccc;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Videos Section */
-.video-reel {
-  text-align: center;
-}
-
-video {
-  width: 100%;
-  max-width: 800px;
-  border: 2px solid #fff;
-  border-radius: 8px;
-}
-
-.video-reel p a {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #aaa;
-  text-decoration: none;
-  font-size: 1rem;
-  border: 1px solid #aaa;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.video-reel p a:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-/* Photos Section */
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.photo-item img {
-  width: 100%;
-  border-radius: 8px;
-  border: 2px solid #fff;
-}
-
-.photo-item p a {
-  display: block;
-  margin-top: 0.5rem;
-  text-align: center;
-  color: #aaa;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.photo-item p a:hover {
-  color: #fff;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background-color: #111;
-  color: #aaa;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
-
-footer p {
-  font-size: 0.9rem;
-}
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Lester Perreras. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
