@@ -182,3 +182,93 @@ footer {
 .content-section {
   margin-top: 3in;
 }
+
+/* Responsive Styles */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Header / Hero Section */
+  header.hero {
+    padding: 2rem 1rem;
+  }
+
+  header .logo {
+    width: 100px; /* Smaller logo for mobile */
+  }
+
+  header h1 {
+    font-size: 2.5rem; /* Reduce font size for better fit */
+  }
+
+  header p {
+    font-size: 1rem; /* Adjust subtitle size */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 1rem; /* Add spacing between links */
+  }
+
+  nav ul li a {
+    font-size: 0.9rem; /* Slightly smaller font for links */
+  }
+
+  /* Sections */
+  section {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  /* Video Section */
+  video {
+    width: 100%; /* Ensure videos take full width */
+  }
+
+  .video-reel {
+    margin-bottom: 1.5rem; /* Reduce spacing */
+  }
+
+  /* Photo Grid */
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr); /* Show two items per row */
+    gap: 1rem; /* Adjust gap for mobile screens */
+  }
+
+  .photo-item {
+    aspect-ratio: 3 / 4;
+  }
+
+  /* Graphics Grid */
+  .graphics-grid {
+    grid-template-columns: repeat(2, 1fr); /* Show two items per row */
+    gap: 1rem;
+  }
+
+  .graphic-item {
+    aspect-ratio: 1 / 1; /* Keep square aspect ratio */
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem; /* Slightly smaller text */
+  }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem; /* Further reduce font size */
+  }
+
+  nav ul li a {
+    font-size: 0.8rem; /* Smaller navigation links */
+    padding: 0.4rem 0.8rem;
+  }
+
+  .photo-grid, .graphics-grid {
+    grid-template-columns: repeat(1, 1fr); /* Show one item per row */
+  }
+
+  .video-reel p a {
+    font-size: 0.8rem; /* Adjust link size */
+  }
+}
