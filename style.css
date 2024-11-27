@@ -149,7 +149,7 @@ video {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.7in;
-  margin-bottom: 0.8in; /* Added 0.5-inch space below the graphic samples */
+  margin-bottom: 1in; /* Changed from 0.8in to 1in below the graphic samples */
 }
 
 .graphic-item {
