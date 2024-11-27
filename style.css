@@ -79,9 +79,27 @@ section p {
   color: #ccc;
 }
 
-/* Home Section with Margins */
+/* Home Section */
 .home-section {
-  margin: 0.3in 3in 3in; /* Top, left/right, bottom */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Ensure text is centered */
+  flex-direction: column; /* Stack elements vertically */
+  padding: 2rem; /* Add some padding for spacing */
+  margin: 0; /* Remove any fixed margins */
+}
+
+.home-section h2 {
+  font-size: 2.5rem; /* Adjust title font size */
+  margin-bottom: 1rem; /* Spacing below the title */
+}
+
+.home-section p {
+  font-size: 1.2rem; /* Adjust paragraph font size */
+  max-width: 90%; /* Prevent text from stretching too wide */
+  margin: 0 auto; /* Center the text */
+  color: #ccc; /* Text color */
 }
 
 /* Titles Space Before Content */
@@ -218,17 +236,22 @@ footer {
     padding: 1rem; /* Reduce padding for smaller screens */
   }
 
-  /* Home Section Adjustments */
+  /* Home Section Fix for Mobile */
   .home-section {
-    margin: 1rem; /* Reduce margin on mobile for better readability */
+    flex-direction: column; /* Stack elements on top of each other */
+    text-align: center; /* Center align text */
+    padding: 2rem 1rem; /* Adjust padding */
   }
 
   .home-section h2 {
-    font-size: 2rem; /* Adjust title font size */
+    font-size: 2rem; /* Reduce the heading font size */
+    margin-bottom: 1rem;
   }
 
   .home-section p {
-    font-size: 1rem; /* Adjust paragraph font size */
+    font-size: 1rem; /* Adjust paragraph size */
+    max-width: 100%; /* Ensure paragraph text is not too wide */
+    margin: 0 auto; /* Center the paragraph */
   }
 
   /* Video Section */
