@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Futura', sans-serif;
+  font-family: 'Lato', sans-serif; /* Professional font */
   background-color: #000;
   color: #fff;
   line-height: 1.6;
@@ -17,6 +17,11 @@ header.hero {
   text-align: center;
   padding: 6rem 2rem;
   background: linear-gradient(135deg, #111, #333);
+}
+
+header .logo {
+  width: 96px; /* Adjust logo size */
+  margin-bottom: 1rem;
 }
 
 header h1 {
@@ -120,6 +125,8 @@ video {
 
 .photo-item img {
   width: 100%;
+  aspect-ratio: 1.5 / 3; /* Maintains 1.5x3 proportion */
+  object-fit: cover; /* Ensures proper cropping */
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
