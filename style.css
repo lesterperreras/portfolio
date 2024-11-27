@@ -79,18 +79,9 @@ section p {
   color: #ccc;
 }
 
-/* Home Section */
+/* Home Section with Margins */
 .home-section {
   margin: 0.3in 3in 3in; /* Top, left/right, bottom */
-}
-
-.home-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.home-section p {
-  font-size: 1.2rem;
 }
 
 /* Titles Space Before Content */
@@ -194,24 +185,7 @@ footer {
 
 /* Responsive Styles */
 
-/* Home Section - Mobile-Friendly Styles */
-@media (max-width: 768px) {
-  .home-section {
-    margin: 1rem; /* Reduce the margin for smaller screens */
-    padding: 1rem; /* Add padding to avoid content touching the edges */
-  }
-
-  .home-section h2 {
-    font-size: 1.8rem; /* Adjust heading size for better fit */
-  }
-
-  .home-section p {
-    font-size: 1rem; /* Make paragraph text smaller */
-    line-height: 1.4; /* Improve readability on smaller screens */
-  }
-}
-
-/* General Mobile Styles */
+/* Mobile Styles */
 @media (max-width: 768px) {
   /* Header / Hero Section */
   header.hero {
@@ -279,21 +253,8 @@ footer {
   }
 }
 
-/* Very Small Screens */
+/* For very small screens (max-width: 480px) */
 @media (max-width: 480px) {
-  .home-section {
-    margin: 0.5rem; /* Further reduce margin for very small screens */
-    padding: 0.8rem; /* Adjust padding to maintain balance */
-  }
-
-  .home-section h2 {
-    font-size: 1.5rem; /* Slightly smaller heading for tiny screens */
-  }
-
-  .home-section p {
-    font-size: 0.9rem; /* Adjust paragraph size */
-  }
-
   header h1 {
     font-size: 2rem; /* Further reduce font size */
   }
