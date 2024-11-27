@@ -87,7 +87,7 @@ section p {
   text-align: center; /* Ensure text is centered */
   flex-direction: column; /* Stack elements vertically */
   padding: 2rem; /* Add some padding for spacing */
-  margin: 0; /* Remove any fixed margins */
+  margin: 0 3in 3in; /* 3-inch margin on left, right, and below */
 }
 
 .home-section h2 {
@@ -241,6 +241,7 @@ footer {
     flex-direction: column; /* Stack elements on top of each other */
     text-align: center; /* Center align text */
     padding: 2rem 1rem; /* Adjust padding */
+    margin: 0; /* Remove margin for mobile */
   }
 
   .home-section h2 {
