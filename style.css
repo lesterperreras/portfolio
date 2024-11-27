@@ -218,6 +218,19 @@ footer {
     padding: 1rem; /* Reduce padding for smaller screens */
   }
 
+  /* Home Section Adjustments */
+  .home-section {
+    margin: 1rem; /* Reduce margin on mobile for better readability */
+  }
+
+  .home-section h2 {
+    font-size: 2rem; /* Adjust title font size */
+  }
+
+  .home-section p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+
   /* Video Section */
   video {
     width: 100%; /* Ensure videos take full width */
