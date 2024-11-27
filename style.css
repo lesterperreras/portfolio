@@ -119,16 +119,24 @@ video {
 /* Photos Section */
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(3, minmax(150px, 1fr)); /* Adjusts for 1.5 rows */
+  gap: 1in; /* Adds a 1-inch gap between photos */
+  padding: 1in; /* Adds padding around the entire grid */
+}
+
+.photo-item {
+  aspect-ratio: 3 / 4; /* Ensures each item keeps a 3:4 ratio */
+  overflow: hidden; /* Crops any overflowing image content */
+  background-color: #ccc; /* Optional: Background color for contrast */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
 }
 
 .photo-item img {
   width: 100%;
-  aspect-ratio: 1.5 / 3; /* Maintains 1.5x3 proportion */
-  object-fit: cover; /* Ensures proper cropping */
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the container without distortion */
 }
 
 .photo-item img:hover {
